@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="movieItemBox" alignment="CENTER_LEFT" prefHeight="191.0" prefWidth="540.0" spacing="20" style="-fx-border-color: #4CAF50;  /* Màu viền xanh lá */ -fx-border-width: 2px;  /* Độ rộng viền 2px */ -fx-border-radius: 10px;  /* Bo góc viền 10px */ -fx-padding: 10px;  /* Khoảng cách giữa nội dung và viền */ -fx-background-radius: 10px;  /* Bo góc nền 10px */ " stylesheets="@../styles/Movie/MovieItemstyle.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Movie.MovieItemController">
+    <!-- Section containing the movie image on the left -->
+    <ImageView fx:id="movieImageView" fitHeight="167.0" fitWidth="97.0" />
+
+    <!-- Section containing detailed movie information in the middle -->
+    <VBox alignment="CENTER_LEFT" prefHeight="319.0" prefWidth="235.0" spacing="5">
+        <Label fx:id="movieTitleLabel" styleClass="movie-title" text="Movie Title" />
+        <Label fx:id="movieGenreLabel" prefHeight="20.0" prefWidth="54.0" text="Genre">
+            <VBox.margin>
+                <Insets right="20.0" />
+            </VBox.margin></Label>
+        <Label fx:id="movieDescriptionLabel" maxWidth="300" prefHeight="20.0" prefWidth="54.0" text="Description" wrapText="true" />
+        <Label fx:id="movieDurationLabel" text="Duration" />
+        <Label fx:id="movieReleaseDateLabel" text="Release Date" />
+        <HBox.margin>
+            <Insets right="20.0" top="20.0" />
+        </HBox.margin>
+    </VBox>
+
+    <!-- Functional buttons section on the far right -->
+    <VBox alignment="CENTER" prefHeight="232.0" prefWidth="132.0" spacing="10">
+        <HBox fx:id="starRatingBox" spacing="2">
+            <!-- Star images will be added here -->
+        </HBox>
+        <Label fx:id="movieRatingLabel" text="Average Rating: 0.0" />
+        <Button fx:id="movieButton" text="Select Movie" />
+        <Button fx:id="reviewButton" text="View Reviews" />
+    </VBox>
+</HBox>

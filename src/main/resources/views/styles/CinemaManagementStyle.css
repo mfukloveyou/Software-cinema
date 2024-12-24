@@ -1,0 +1,78 @@
+/* Tải phông chữ từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Đặt nền cho VBox */
+.vbox {
+    -fx-background-image: url("../../images/nen.jpg"); /* Đường dẫn đến hình nền */
+    -fx-background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
+    -fx-background-position: center; /* Đặt vị trí hình nền ở giữa */
+    -fx-background-repeat: no-repeat; /* Không lặp lại hình nền */
+    -fx-font-family: 'Montserrat', sans-serif; /* Áp dụng phông chữ */
+}
+
+/* Hiệu ứng cho logo */
+#logoImage {
+    -fx-opacity: 1; /* Độ trong suốt */
+    -fx-padding: 10; /* Khoảng cách bên trong */
+    -fx-transition: transform 0.3s;
+}
+
+#logoImage:hover {
+    -fx-scale-x: 1.2; /* Phóng to khi di chuột */
+    -fx-scale-y: 1.2; /* Phóng to khi di chuột */
+}
+
+/* Đặt hình nền cho StackPane */
+.mainPane {
+    -fx-background-image: url("/images/thay.jpg"); /* Đảm bảo đường dẫn chính xác */
+    -fx-background-size: contain; /* Hoặc cover, tùy thuộc vào hiệu ứng bạn muốn */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center top; /* Vị trí hình ảnh */
+}
+
+/* Tùy chỉnh cho các nút */
+.button {
+    -fx-background-color: #4CAF50; /* Màu nền xanh */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-font-size: 14px; /* Kích thước chữ */
+    -fx-padding: 10px 20px; /* Padding cho nút */
+    -fx-border-radius: 5; /* Bo góc */
+    -fx-background-radius: 5; /* Bo góc cho nền */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 1); /* Hiệu ứng đổ bóng */
+    -fx-transition: 0.3s; /* Thời gian chuyển tiếp */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Màu nền khi di chuột vào nút */
+    -fx-scale-x: 1.1; /* Tăng kích thước nút khi di chuột */
+    -fx-scale-y: 1.1; /* Tăng kích thước nút khi di chuột */
+}
+
+/* Tùy chỉnh cho nhãn (Label) */
+.label {
+    -fx-font-size: 20px; /* Kích thước chữ cho nhãn */
+    -fx-text-fill: #fff; /* Màu chữ trắng */
+    -fx-font-weight: 500; /* Đậm nhẹ */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1); /* Hiệu ứng đổ bóng cho chữ */
+    -fx-transition: 0.3s; /* Thời gian chuyển tiếp */
+}
+
+.label:hover {
+    -fx-scale-x: 1.1; /* Tăng kích thước chữ khi di chuột */
+    -fx-scale-y: 1.1; /* Tăng kích thước chữ khi di chuột */
+}
+
+/* Tùy chỉnh cho ImageView */
+.image-view {
+    -fx-opacity: 1; /* Độ trong suốt của hình ảnh */
+}
+
+/* Tùy chỉnh cho StackPane */
+.stack-pane {
+    -fx-padding: 20; /* Padding cho StackPane */
+}
+
+/* Tùy chỉnh cho HBox */
+.hbox {
+    -fx-spacing: 10; /* Khoảng cách giữa các nút trong HBox */
+}

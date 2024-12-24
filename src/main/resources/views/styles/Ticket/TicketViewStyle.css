@@ -1,0 +1,29 @@
+/* Định dạng cho ListView hiển thị danh sách vé */
+.list-view {
+    -fx-border-color: #2196F3; /* Màu viền xanh dương */
+    -fx-border-width: 2px; /* Độ dày của viền */
+    -fx-background-color: #e3f2fd; /* Màu nền xanh dương nhạt */
+    -fx-padding: 10; /* Khoảng cách bên trong */
+    -fx-font-size: 14px; /* Kích thước font chữ */
+    -fx-background-radius: 5; /* Bo góc của viền */
+}
+
+/* Định dạng cho các nút bấm */
+.button {
+    -fx-background-color: #2196F3; /* Màu nền xanh dương */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-font-size: 14px;
+    -fx-padding: 8 16 8 16; /* Padding trên-dưới và trái-phải */
+    -fx-background-radius: 5; /* Bo tròn góc */
+    -fx-margin-top: 10px; /* Khoảng cách trên */
+}
+
+/* Hiệu ứng hover cho các nút */
+.button:hover {
+    -fx-background-color: #1e88e5; /* Màu khi di chuột qua */
+}
+
+/* Hiệu ứng khi nút bị nhấn */
+.button:pressed {
+    -fx-background-color: #1976d2; /* Màu khi nút được nhấn */
+}

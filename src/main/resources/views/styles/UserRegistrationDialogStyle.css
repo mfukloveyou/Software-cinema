@@ -1,0 +1,51 @@
+/* Định dạng cho VBox */
+.vbox {
+    -fx-padding: 20; /* Padding cho VBox */
+}
+
+/* Định dạng cho TextField */
+.text-field {
+    -fx-background-color: #f0f0f0; /* Màu nền xám nhạt */
+    -fx-border-color: #2196F3; /* Màu viền xanh dương */
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8;
+    -fx-font-size: 14px;
+}
+
+/* Định dạng cho PasswordField */
+.password-field {
+    -fx-background-color: #f0f0f0; /* Màu nền xám nhạt */
+    -fx-border-color: #2196F3; /* Màu viền xanh dương */
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8;
+    -fx-font-size: 14px;
+}
+
+/* Định dạng cho Button */
+.button {
+    -fx-background-color: #2196F3; /* Màu nền xanh dương */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-font-size: 14px;
+    -fx-padding: 8 16 8 16; /* Padding trên-dưới và trái-phải */
+    -fx-background-radius: 5; /* Bo tròn góc */
+}
+
+/* Hiệu ứng hover cho Button */
+.button:hover {
+    -fx-background-color: #1e88e5; /* Màu khi di chuột qua */
+}
+
+/* Hiệu ứng khi Button bị nhấn */
+.button:pressed {
+    -fx-background-color: #1976d2; /* Màu khi nút được nhấn */
+}
+
+/* Định dạng cho DialogPane */
+.dialog-pane {
+    -fx-background-color: #e3f2fd; /* Màu nền xanh nhạt */
+    -fx-border-color: #2196F3; /* Màu viền xanh dương */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5;
+}

@@ -1,0 +1,60 @@
+/* Thiết kế tiêu đề */
+.dialog-title {
+    -fx-text-fill: #333333;
+    -fx-padding: 10;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 0 0 2 0;
+    -fx-alignment: center;
+}
+
+/* Thiết kế GridPane chứa ghế */
+.seat-grid {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10;
+    -fx-padding: 20;
+}
+
+/* Thiết kế nút ghế */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 5;
+
+}
+
+/* Màu sắc cho ghế đã đặt */
+.booked-seat {
+    -fx-background-color: #f44336;
+    -fx-text-fill: #ffffff;
+}
+
+/* Màu sắc cho ghế trống */
+.available-seat {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #ffffff;
+}
+
+/* Màu sắc khi di chuột qua ghế */
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Màu sắc cho ghế được chọn */
+.button:selected {
+    -fx-background-color: #FFD700;
+}
+
+/* Thiết kế nút xác nhận */
+.confirm-button {
+    -fx-background-color: #008CBA;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 10;
+    -fx-padding: 10 20;
+    -fx-font-size: 18;
+}
+
+/* Hiệu ứng khi di chuột qua nút xác nhận */
+.confirm-button:hover {
+    -fx-background-color: #005f6b;
+}

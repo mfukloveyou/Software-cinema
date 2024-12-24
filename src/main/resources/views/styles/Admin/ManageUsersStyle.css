@@ -1,0 +1,60 @@
+/* Styles for the DialogPane */
+.dialog-pane {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #ccc; /* Light grey border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5; /* Rounded corners */
+}
+
+/* Styles for the VBox */
+.vbox {
+    -fx-padding: 20; /* Padding around the VBox */
+    -fx-spacing: 15; /* Spacing between elements */
+}
+/* Styles for the title label */
+.label-title {
+    -fx-font-size: 18px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-text-fill: #333333; /* Dark grey text color */
+    -fx-padding: 10; /* Padding around the label */
+}
+
+
+/* Styles for ListView */
+.list-view {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #2196F3; /* Blue border color */
+    -fx-border-width: 2px; /* Border width */
+}
+
+/* Styles for HBox */
+.hbox {
+    -fx-spacing: 10; /* Spacing between buttons */
+}
+
+/* Styles for Buttons */
+.button {
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-text-fill: white; /* White text */
+    -fx-padding: 8px 15px; /* Padding inside buttons */
+    -fx-font-size: 14px; /* Font size */
+     /* Bold text */
+    -fx-border-radius: 5; /* Rounded corners */
+}
+
+.button:hover {
+    -fx-background-color: #388E3C; /* Darker green on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #2E7D32; /* Even darker green on press */
+}
+
+/* Specific styles for action buttons (optional) */
+#handleUpdateUser {
+    -fx-background-color: #2196F3; /* Blue for Update button */
+}
+
+#handleDeleteUser {
+    -fx-background-color: #f44336; /* Red for Delete button */
+}

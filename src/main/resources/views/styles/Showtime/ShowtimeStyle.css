@@ -1,0 +1,38 @@
+/* styles/ShowtimeStyle.css */
+.vbox {
+    -fx-background-color: #ffffff; /* Màu nền trắng cho VBox */
+    -fx-padding: 20; /* Padding cho VBox */
+    -fx-spacing: 10; /* Khoảng cách giữa các phần tử */
+    -fx-border-radius: 10; /* Bo góc cho VBox */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 10); /* Hiệu ứng đổ bóng cho VBox */
+}
+
+.list-view {
+    -fx-background-color: #f8f8f8; /* Màu nền cho ListView */
+    -fx-border-color: #ccc; /* Màu viền cho ListView */
+    -fx-border-radius: 5; /* Bo góc cho viền */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 5); /* Hiệu ứng đổ bóng cho ListView */
+}
+
+/* Định dạng cho Button */
+.button {
+    -fx-background-color: #4CAF50; /* Màu nền cho nút */
+    -fx-text-fill: white; /* Màu chữ cho nút */
+    -fx-font-size: 14px; /* Kích thước chữ */
+    -fx-padding: 10 20; /* Padding cho Button */
+    -fx-background-radius: 5; /* Bo góc cho Button */
+    -fx-cursor: hand; /* Hiển thị con trỏ chuột dưới dạng bàn tay */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 5); /* Hiệu ứng đổ bóng cho nút */
+}
+
+/* Hiệu ứng hover cho Button */
+.button:hover {
+    -fx-background-color: #45a049; /* Màu nền khi hover */
+    -fx-scale-x: 1.05; /* Phóng to nút theo trục x khi hover */
+    -fx-scale-y: 1.05; /* Phóng to nút theo trục y khi hover */
+}
+
+/* Hiệu ứng khi Button bị nhấn */
+.button:pressed {
+    -fx-background-color: #388e3c; /* Màu khi nút được nhấn */
+}

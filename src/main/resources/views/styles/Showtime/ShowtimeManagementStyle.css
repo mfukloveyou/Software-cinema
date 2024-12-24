@@ -1,0 +1,44 @@
+/* Styles for the VBox */
+.vbox {
+    -fx-padding: 20;
+    -fx-spacing: 10;
+    -fx-background-color: #f0f0f0; /* Light grey background */
+}
+
+/* Styles for ListView */
+.list-view {
+    -fx-background-color: #ffffff; /* White background for ListView */
+    -fx-border-color: #cccccc; /* Light border */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-padding: 10; /* Padding inside the ListView */
+}
+
+/* Styles for Buttons */
+.button {
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10 20; /* Padding inside buttons */
+    -fx-border-radius: 5; /* Rounded corners */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #3e8e41; /* Even darker green on press */
+}
+
+/* Specific styles for individual buttons (optional) */
+#handleAddShowtime {
+    -fx-background-color: #2196F3; /* Blue for Add button */
+}
+
+#handleDeleteShowtime {
+    -fx-background-color: #f44336; /* Red for Delete button */
+}
+
+#handleClose {
+    -fx-background-color: #9E9E9E; /* Grey for Close button */
+}

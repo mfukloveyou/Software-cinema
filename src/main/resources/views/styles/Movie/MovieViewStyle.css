@@ -1,0 +1,39 @@
+/* Định dạng cho ListView hiển thị danh sách phim */
+.list-view {
+    -fx-border-color: #4CAF50; /* Màu viền xanh lá cây */
+    -fx-border-width: 2px;
+    -fx-background-color: #f5f5f5; /* Màu nền xám nhạt */
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+/* Định dạng cho các nút bấm */
+.button {
+    -fx-background-color: #4CAF50; /* Màu nền xanh lá cây */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-font-size: 14px;
+    -fx-padding: 8 16 8 16; /* Padding trên-dưới và trái-phải */
+    -fx-background-radius: 5; /* Bo tròn góc */
+}
+
+/* Hiệu ứng hover cho các nút */
+.button:hover {
+    -fx-background-color: #45a049; /* Màu khi di chuột qua */
+}
+
+/* Hiệu ứng khi nút bị nhấn */
+.button:pressed {
+    -fx-background-color: #3e8e41; /* Màu khi nút được nhấn */
+}
+
+/* Căn giữa các thành phần bên trong HBox */
+.hbox {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+.mainPane {
+    -fx-background-image: url("/images/thay.jpg"); /* Đảm bảo đường dẫn chính xác */
+    -fx-background-size: contain; /* Hoặc cover, tùy thuộc vào hiệu ứng bạn muốn */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center top; /* Vị trí hình ảnh */
+}

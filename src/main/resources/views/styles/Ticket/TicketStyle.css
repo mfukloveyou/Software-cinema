@@ -1,0 +1,26 @@
+.header-label {
+    -fx-font-size: 24px; /* Tăng kích thước chữ cho tiêu đề */
+    -fx-font-weight: bold; /* Làm đậm chữ */
+    -fx-text-fill: #333; /* Màu chữ cho tiêu đề */
+}
+
+.label {
+    -fx-font-size: 14px; /* Giảm kích thước chữ cho các nhãn */
+    -fx-text-fill: #333; /* Màu chữ cho các nhãn */
+    -fx-font-weight: bold; /* Làm đậm chữ */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 5, 0.0, 1, 1); /* Hiệu ứng bóng cho chữ */
+}
+
+.button {
+    -fx-background-color: #4CAF50; /* Màu nền cho nút xác nhận */
+    -fx-text-fill: white; /* Màu chữ cho nút */
+    -fx-font-size: 14px; /* Kích thước chữ cho nút */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Màu nền khi hover */
+}
+
+.button:disabled {
+    -fx-background-color: #ccc; /* Màu nền cho nút bị vô hiệu hóa */
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" spacing="5" prefWidth="250" style="-fx-border-color: #4CAF50;  /* Màu viền xanh lá */
+-fx-border-width: 2px;  /* Độ rộng viền 2px */
+-fx-border-radius: 10px;  /* Bo góc viền 10px */
+-fx-padding: 10px;  /* Khoảng cách giữa nội dung và viền */
+-fx-background-color: #CC99FF;  /* Màu nền tím nhạt */
+-fx-background-radius: 10px;  /* Bo góc nền 10px */
+">
+    <Label fx:id="ticketIdLabel" style="-fx-font-weight: bold;"/>
+    <Label fx:id="titleLabel" style="-fx-font-weight: bold;"/>
+    <Label fx:id="showtimeLabel" style="-fx-font-size: 14px;"/>
+    <Label fx:id="seatLabel" style="-fx-font-size: 14px;"/>
+    <Label fx:id="bookedAtLabel" style="-fx-font-size: 14px;"/>
+</VBox>

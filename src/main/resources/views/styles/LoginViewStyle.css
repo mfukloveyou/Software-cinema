@@ -1,0 +1,65 @@
+/* Style for the login form container */
+.anchorPane {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 20;
+}
+
+/* Style for the label text */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* Style for the TextField and PasswordField */
+.text-field, .password-field {
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+    -fx-font-size: 14px;
+}
+
+/* Focused state for the TextField and PasswordField */
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #4d90fe; /* Sky blue border color when focused */
+    -fx-border-width: 2;
+}
+
+/* Style for the Login and Close buttons */
+.button {
+    -fx-background-color: #4d90fe; /* Sky blue background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #000000, 3, 0.5, 0, 3);
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #357ae8; /* Darker blue when hovered */
+}
+
+/* Style for the Close button */
+.button:focused {
+    -fx-background-color: #e0e0e0;
+}
+
+/* Style for the Login button (optional additional style) */
+.button:default {
+    -fx-background-color: #357ae8;
+    -fx-text-fill: white;
+}
+
+/* Style for the spacing and layout of the VBox and HBox elements */
+.VBox {
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+}
+
+.HBox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}

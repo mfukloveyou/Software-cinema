@@ -1,0 +1,36 @@
+/* Tạo kiểu cho GridPane */
+.grid-pane {
+    -fx-background-color: #f0f0f0; /* Màu nền nhẹ */
+    -fx-padding: 20; /* Khoảng cách xung quanh */
+    -fx-border-color: #cccccc; /* Màu viền */
+    -fx-border-width: 2; /* Độ dày viền */
+    -fx-border-radius: 10; /* Bo góc viền */
+}
+
+/* Kiểu cho tiêu đề */
+.label {
+    -fx-font-size: 18px; /* Kích thước chữ cho tiêu đề */
+    -fx-text-fill: #333333; /* Màu chữ */
+    -fx-font-weight: bold; /* Chữ đậm */
+}
+
+/* Kiểu cho các trường nhập liệu */
+.text-field, .password-field {
+    -fx-pref-width: 200px; /* Chiều rộng ưa thích cho các trường */
+    -fx-border-color: #cccccc; /* Màu viền cho các trường */
+    -fx-border-radius: 5; /* Bo góc cho các trường */
+}
+
+/* Kiểu cho nút */
+.button {
+    -fx-background-color: #4CAF50; /* Màu nền cho nút */
+    -fx-text-fill: white; /* Màu chữ cho nút */
+    -fx-font-size: 14px; /* Kích thước chữ cho nút */
+    -fx-padding: 10px; /* Khoảng cách bên trong nút */
+    -fx-background-radius: 5; /* Bo góc cho nút */
+}
+
+/* Hiệu ứng khi di chuột qua nút */
+.button:hover {
+    -fx-background-color: #45a049; /* Màu nền khi di chuột qua */
+}

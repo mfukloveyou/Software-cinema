@@ -1,0 +1,59 @@
+/* styles.css */
+
+.header-label {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-fill: #333;
+}
+
+
+
+/* Thêm khung cho các cell trong ListView */
+.list-view .list-cell {
+
+    -fx-border-color: #4CAF50; /* Màu sắc của đường viền */
+    -fx-border-width: 2px; /* Độ dày của đường viền */
+    -fx-border-radius: 5px; /* Bo góc cho đường viền */
+    -fx-padding: 10px; /* Khoảng cách bên trong cell */
+    -fx-margin: 15px; /* Khoảng cách giữa các cell */
+}
+
+/* Các kiểu khác có thể giữ nguyên */
+.list-view {
+
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+}
+
+
+/* Button styles */
+.button {
+    -fx-background-color: #4CAF50; /* Green background color */
+    -fx-text-fill: white;          /* White text color */
+    -fx-font-size: 14px;
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 5px;       /* Rounded button edges */
+    -fx-background-radius: 5px;
+    -fx-effect: none;
+}
+.button:hover {
+    -fx-background-color: #45a049; /* Màu nền khi hover */
+    -fx-effect: none; /* Đảm bảo không có hiệu ứng làm thay đổi kích thước */
+}
+.hbox {
+    spacing: 10px;
+    padding: 10px;
+}
+
+.vbox {
+    background-color: #ffffff; /* Màu nền cho VBox */
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}

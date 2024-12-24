@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Ticket.TicketController">
+    <stylesheets>
+        <URL value="@../styles/Ticket/TicketViewStyle.css" />
+    </stylesheets>
+    <ListView fx:id="ticketListView" prefHeight="405.0" prefWidth="333.0">
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </VBox.margin></ListView>
+    <Button onAction="#handleDeleteTicket" prefHeight="36.0" prefWidth="334.0" text="Xóa vé">
+      <VBox.margin>
+         <Insets left="20.0" right="20.0" top="5.0" />
+      </VBox.margin></Button>
+    <Button onAction="#handleCloseAction" prefHeight="36.0" prefWidth="335.0" text="Đóng">
+      <VBox.margin>
+         <Insets bottom="10.0" left="20.0" top="10.0" />
+      </VBox.margin></Button>
+</VBox>

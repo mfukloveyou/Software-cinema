@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="192.0" prefWidth="463.0" vgap="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.User.AdminController">
+    <stylesheets>
+        <URL value="@../styles/Admin/AdminLoginStyle.css" />
+    </stylesheets>
+
+    <!-- Label for title -->
+    <Label text="Admin Login" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <!-- Username field -->
+    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <font>
+            <Font size="11.0" />
+        </font>
+    </Label>
+    <TextField fx:id="usernameField" promptText="Username" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <!-- Password field -->
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <PasswordField fx:id="passwordField" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <HBox prefHeight="39.0" prefWidth="185.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <children>
+            <Button onAction="#handleCancel" prefHeight="42.0" prefWidth="115.0" text="Cancel" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" />
+                </padding>
+                <HBox.margin>
+                    <Insets left="20.0" />
+                </HBox.margin>
+            </Button>
+        </children>
+        <padding>
+            <Insets right="20.0" />
+        </padding>
+    </HBox>
+      <!-- Buttons for login and cancel -->
+      <Button onAction="#handleLogin" prefHeight="31.0" prefWidth="77.0" text="Login" GridPane.rowIndex="3" />
+
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

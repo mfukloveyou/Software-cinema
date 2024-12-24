@@ -1,0 +1,101 @@
+/* Định dạng cho HBox chứa thông tin phim */
+.hbox {
+    -fx-background-color: #ffffff; /* Màu nền trắng cho hộp phim */
+    -fx-padding: 10; /* Padding cho HBox */
+    -fx-border-radius: 5; /* Bo tròn góc */
+    -fx-border-color: #4CAF50; /* Màu viền xanh lá */
+    -fx-border-width: 2px; /* Độ rộng viền */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 5); /* Thêm hiệu ứng đổ bóng */
+    -fx-transition: all 0.3s ease; /* Hiệu ứng chuyển đổi cho HBox */
+}
+
+/* Hiệu ứng khi di chuột vào HBox */
+.hbox:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 10); /* Tăng độ đổ bóng khi di chuột */
+}
+
+/* Định dạng cho ImageView */
+/* Định dạng cho ImageView */
+/* Định dạng cho ImageView */
+/* Định dạng cho ImageView */
+.image-view {
+    -fx-border-radius: 10px; /* Bo góc cho hình ảnh */
+    -fx-border-color: #4CAF50; /* Màu viền xanh lá */
+    -fx-border-width: 2px; /* Độ rộng viền */
+    -fx-preserve-ratio: true; /* Giữ tỷ lệ gốc cho hình ảnh */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 5); /* Hiệu ứng đổ bóng cho hình ảnh */
+    -fx-transition: all 0.3s ease; /* Hiệu ứng chuyển đổi cho hình ảnh */
+    -fx-clip: shape("M 0,0 L 100,0 L 100,100 L 0,100 Z", 10); /* Cắt hình ảnh theo hình chữ nhật bo góc */
+}
+
+/* Hiệu ứng khi di chuột vào hình ảnh */
+.image-view:hover {
+    -fx-scale-x: 1.05; /* Phóng to hình ảnh theo trục x */
+    -fx-scale-y: 1.05; /* Phóng to hình ảnh theo trục y */
+}
+
+
+/* Định dạng cho các Label */
+.movie-title {
+    -fx-font-size: 16px; /* Kích thước chữ tiêu đề phim */
+    -fx-text-fill: #333333; /* Màu chữ xám đậm */
+    -fx-font-weight: bold; /* Chữ đậm */
+    -fx-transition: color 0.3s ease; /* Hiệu ứng chuyển đổi cho màu sắc */
+}
+
+/* Hiệu ứng khi di chuột vào tiêu đề phim */
+.movie-title:hover {
+    -fx-text-fill: #ff5722; /* Đổi màu chữ thành màu cam khi di chuột */
+}
+
+/* Định dạng cho mô tả phim, thời gian và ngày phát hành */
+.label {
+    -fx-font-size: 14px; /* Kích thước chữ cho các nhãn khác */
+    -fx-text-fill: #666666; /* Màu chữ xám nhạt */
+    -fx-transition: color 0.3s ease; /* Hiệu ứng chuyển đổi cho màu sắc */
+}
+
+/* Hiệu ứng khi di chuột vào mô tả, thời gian và ngày phát hành */
+.label:hover {
+    -fx-text-fill: #ff5722; /* Đổi màu chữ thành màu cam khi di chuột */
+}
+
+/* Định dạng cho VBox chứa các nút */
+.vbox {
+    -fx-spacing: 5; /* Khoảng cách giữa các nút */
+}
+
+/* Định dạng cho Button */
+.button {
+    -fx-background-color: #2196F3; /* Màu nền xanh dương */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-font-size: 14px; /* Kích thước chữ */
+    -fx-padding: 8 16 8 16; /* Padding cho Button */
+    -fx-background-radius: 5; /* Bo tròn góc */
+    -fx-border-width: 2px; /* Độ rộng viền nút */
+    -fx-cursor: hand; /* Hiển thị con trỏ chuột dưới dạng bàn tay */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 5); /* Hiệu ứng đổ bóng cho nút */
+}
+
+/* Hiệu ứng hover cho Button */
+.button:hover {
+    -fx-background-color: #1e88e5; /* Màu khi di chuột qua */
+    -fx-border-color: #1565c0; /* Màu viền khi di chuột */
+}
+
+/* Hiệu ứng khi Button bị nhấn */
+.button:pressed {
+    -fx-background-color: #1976d2; /* Màu khi nút được nhấn */
+    -fx-border-color: #1565c0; /* Màu viền khi nút bị nhấn */
+}
+
+/* Định dạng cho HBox chứa đánh giá sao */
+.star-rating-box {
+    -fx-spacing: 2; /* Khoảng cách giữa các sao */
+}
+
+/* Định dạng cho Label hiển thị đánh giá trung bình */
+.movie-rating-label {
+    -fx-font-size: 14px; /* Kích thước chữ */
+    -fx-text-fill: #333333; /* Màu chữ xám đậm */
+}

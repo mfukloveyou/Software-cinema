@@ -1,0 +1,49 @@
+/* Thiết lập cho AnchorPane */
+.anchor-pane {
+    -fx-background-color: #f8f8f8; /* Màu nền nhẹ hơn */
+    -fx-padding: 20; /* Khoảng cách nội dung */
+}
+
+/* Thiết lập cho Label */
+.label {
+    -fx-font-size: 16px; /* Kích thước chữ lớn hơn */
+    -fx-text-fill: #333333; /* Màu chữ */
+    -fx-font-weight: bold; /* Chữ đậm */
+}
+
+/* Thiết lập cho Button */
+.button {
+    -fx-background-color: #c41818; /* Màu nền button */
+    -fx-text-fill: white; /* Màu chữ button */
+    -fx-font-size: 14px; /* Kích thước chữ button nhỏ hơn */
+    -fx-padding: 8 16; /* Padding cho button nhỏ hơn */
+    -fx-border-radius: 5; /* Bo góc cho button */
+    -fx-background-radius: 5; /* Bo góc cho background button */
+    -fx-effect: dropshadow(gaussian, #888888, 5, 0.5, 0, 1); /* Hiệu ứng bóng cho button */
+}
+
+/* Thiết lập cho Button khi hover */
+.button:hover {
+    -fx-background-color: #a11212; /* Màu nền button khi hover */
+    -fx-effect: dropshadow(gaussian, #666666, 5, 0.5, 0, 1); /* Hiệu ứng bóng khi hover */
+}
+
+/* Thiết lập cho TextField */
+.text-field {
+    -fx-background-color: #ffffff; /* Màu nền cho TextField */
+    -fx-border-color: #cccccc; /* Màu viền cho TextField */
+    -fx-border-radius: 5; /* Bo góc cho TextField */
+    -fx-border-width: 2; /* Độ dày viền cho TextField */
+    -fx-padding: 8; /* Khoảng cách cho TextField */
+}
+
+/* Thiết lập cho TextField khi được focus */
+.text-field:focused {
+    -fx-background-color: #e0e0e0; /* Màu nền khi hộp được chọn */
+    -fx-border-color: #a50a0a; /* Màu viền khi hộp được chọn */
+}
+
+/* Thiết lập cho GridPane */
+.grid-pane {
+    -fx-padding: 10; /* Khoảng cách cho GridPane */
+}

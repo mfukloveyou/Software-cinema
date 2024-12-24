@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="501.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Seat.SeatController">
+    <stylesheets>
+        <URL value="@../styles/Seat/Seatstyle.css" />
+    </stylesheets>
+
+    <!-- Thêm tiêu đề cho hộp thoại -->
+    <Label alignment="CENTER" prefHeight="50.0" prefWidth="277.0" styleClass="dialog-title" text="Screen">
+        <font>
+            <Font name="Arial Bold" size="24.0" />
+        </font>
+      <VBox.margin>
+         <Insets left="20.0" right="20.0" top="10.0" />
+      </VBox.margin>
+    </Label>
+
+    <!-- Bố trí ghế trong GridPane -->
+    <GridPane fx:id="seatGridPane" alignment="CENTER" hgap="10" prefHeight="347.0" prefWidth="500.0" styleClass="seat-grid" vgap="10">
+        <!-- Ghế sẽ được thêm vào đây bằng mã Java -->
+    </GridPane>
+
+    <!-- Nút xác nhận đặt ghế -->
+    <Button fx:id="confirmButton" alignment="CENTER" contentDisplay="CENTER" onAction="#confirmBooking" prefHeight="27.0" prefWidth="500.0" styleClass="confirm-button" text="EXIT" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+        <font>
+            <Font name="Arial" size="18.0" />
+        </font>
+      <VBox.margin>
+         <Insets bottom="10.0" left="20.0" right="20.0" />
+      </VBox.margin>
+    </Button>
+</VBox>

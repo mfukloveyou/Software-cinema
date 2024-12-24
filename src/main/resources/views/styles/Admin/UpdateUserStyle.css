@@ -1,0 +1,41 @@
+/* Styles for the GridPane */
+.grid-pane {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-padding: 20; /* Padding around the grid */
+    -fx-border-color: #ccc; /* Light grey border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5; /* Rounded corners */
+}
+
+/* Styles for Labels */
+.label {
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: #333333; /* Dark grey text color */
+}
+
+/* Styles for TextFields */
+.text-field {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #2196F3; /* Blue border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-padding: 5; /* Padding inside text fields */
+}
+
+/* Styles for Buttons */
+.button {
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-text-fill: white; /* White text */
+    -fx-padding: 8px 15px; /* Padding inside buttons */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-border-radius: 5; /* Rounded corners */
+}
+
+.button:hover {
+    -fx-background-color: #388E3C; /* Darker green on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #2E7D32; /* Even darker green on press */
+}

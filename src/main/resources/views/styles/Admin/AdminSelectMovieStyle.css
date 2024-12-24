@@ -1,0 +1,64 @@
+/* Set general styling for the VBox container */
+.vbox {
+    -fx-alignment: center;
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+    -fx-background-color: #f4f4f4; /* Light gray background */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* Styling for the header label */
+.header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Dark gray text */
+    -fx-alignment: center;
+}
+/* Styling for all buttons */
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-text-fill: white;
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-pref-height: 42px;
+    -fx-pref-width: 150px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-hover-background-color: #45a049; /* Darker green when hovering */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+/* Styling for the Exit Button */
+.button:focused {
+    -fx-background-color: #FF5733; /* Red background when focused */
+    -fx-text-fill: white;
+}
+
+/* Styling for the VBox container for the buttons */
+.vbox > .button {
+    -fx-font-size: 16px;
+    -fx-pref-width: 160px;
+}
+
+/* Styling for button hover effect */
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green background on hover */
+}
+
+/* Styling for the Exit button */
+.button:pressed {
+    -fx-background-color: #FF5733; /* Red color when pressed */
+    -fx-text-fill: white;
+}
+
+/* Add margin to buttons */
+.button {
+    -fx-margin: 10px;
+}
+
+/* Add spacing between buttons */
+.vbox > .button {
+    -fx-spacing: 10px;
+}

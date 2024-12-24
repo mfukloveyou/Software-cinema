@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="392.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Showtime.AddShowtimeDialogController">
+    <stylesheets>
+        <URL value="@../styles/Showtime/AddShowtimeStyle.css" />
+    </stylesheets>
+    <Label contentDisplay="CENTER" layoutX="136.0" layoutY="14.0" prefHeight="46.0" prefWidth="156.0" style="-fx-font-size: 18px;" text="ADD SHOWTIME" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="332.0" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="14.0">
+        <font>
+            <Font name="SVN-GothamBlack" size="12.0" />
+        </font>
+    </Label>
+
+    <GridPane hgap="10" layoutY="30" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+
+    <Button layoutX="116.0" layoutY="329.0" onAction="#handleAddShowtime" prefHeight="38.0" prefWidth="80.0" text="Add">
+    </Button>
+    <Button layoutX="231.0" layoutY="329.0" onAction="#handleCancel" prefHeight="38.0" prefWidth="73.0" text="Close">
+        <font>
+            <Font name="SVN-GothamBlack" size="12.0" />
+        </font>
+    </Button>
+
+    <!-- Trường Movie ID -->
+    <TextField fx:id="movieIdField" alignment="CENTER" editable="false" layoutX="214.0" layoutY="80.0" />
+
+    <!-- DatePicker cho ngày -->
+    <DatePicker fx:id="showtimeDatePicker" layoutX="214.0" layoutY="127.0" prefHeight="26.0" prefWidth="156.0" />
+
+    <!-- Trường TextField cho giờ -->
+    <TextField fx:id="showtimeTimeField" layoutX="214.0" layoutY="177.0" promptText="HH:mm" />
+
+    <!-- Trường số lượng ghế có sẵn -->
+    <TextField fx:id="availableSeatsField" layoutX="214.0" layoutY="227.0" promptText="Max: 60 seats" />
+
+    <!-- Trường tiêu đề -->
+    <TextField fx:id="titleField" layoutX="214.0" layoutY="277.0" promptText="Name film" />
+
+    <!-- Các Label cho các trường -->
+    <Label layoutX="114.0" layoutY="133.0" text=" Date:" />
+    <Label layoutX="121.0" layoutY="283.0" text="Title:" />
+    <Label layoutX="118.0" layoutY="233.0" text="Seats:" />
+    <Label layoutX="119.0" layoutY="183.0" text="Time:" />
+    <Label layoutX="120.0" layoutY="86.0" text="Movie ID:" />
+</AnchorPane>

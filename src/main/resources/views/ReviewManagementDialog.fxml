@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" stylesheets="@styles/Ticket/ReviewManagementStyle.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Movie.ReviewManagementController">
+    <Label text="Movie Review Management" />
+
+    <!-- ListView to display current reviews -->
+    <ListView fx:id="reviewsListView" prefHeight="100" prefWidth="100.0">
+        <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+        </VBox.margin></ListView>
+
+    <!-- TextArea for the user to enter their comment -->
+    <TextArea fx:id="commentTextArea" prefHeight="81.0" prefWidth="300.0" promptText="Enter your comment" wrapText="true">
+        <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+        </VBox.margin></TextArea>
+
+    <!-- ComboBox for the user to select a rating score -->
+    <ComboBox fx:id="ratingComboBox" promptText="Select rating (1-5)">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <Integer fx:value="1" />
+                <Integer fx:value="2" />
+                <Integer fx:value="3" />
+                <Integer fx:value="4" />
+                <Integer fx:value="5" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+   <HBox alignment="CENTER" prefHeight="57.0" prefWidth="322.0" spacing="20.0">
+      <children>
+      
+          <!-- Button to save the review -->
+          <Button onAction="#handleSaveReview" text="Save Review" />
+      
+          <!-- Button to close the dialog -->
+          <Button alignment="CENTER" onAction="#handleCloseDialog" text="Close" />
+      </children>
+   </HBox>
+</VBox>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Buttons arranged vertically -->
+
+<VBox alignment="CENTER" minHeight="240.0" minWidth="266.0" prefHeight="240.0" prefWidth="266.0" stylesheets="@../styles/Admin/AdminSelectMovieStyle.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Movie.AdminSelectMovieDialogController">
+    <!-- Header Label -->
+    <Label styleClass="header-label" text="Select an action for the movie:">
+        <VBox.margin>
+            <Insets bottom="10.0" top="20.0" />
+        </VBox.margin>
+    </Label>
+     <!-- Delete Movie Button -->
+     <Button onAction="#handleDeleteMovie" prefHeight="37.0" prefWidth="183.0" text="Delete Movie">
+         <VBox.margin>
+             <Insets bottom="5.0" />
+         </VBox.margin>
+     </Button>
+
+     <!-- View Movies List Button -->
+     <Button onAction="#handleViewMovies" prefHeight="37.0" prefWidth="174.0" text="View Movie List">
+         <VBox.margin>
+             <Insets bottom="5.0" />
+         </VBox.margin>
+     </Button>
+
+     <!-- Add Movie Button -->
+     <Button onAction="#handleAddMovie" prefHeight="42.0" prefWidth="153.0" text="Add Movie">
+         <VBox.margin>
+             <Insets bottom="5.0" />
+         </VBox.margin>
+     </Button>
+
+     <!-- Exit Button -->
+     <Button onAction="#handleExit" prefHeight="43.0" prefWidth="100" text="Exit">
+         <VBox.margin>
+             <Insets bottom="20.0" />
+         </VBox.margin>
+     </Button>
+ </VBox>

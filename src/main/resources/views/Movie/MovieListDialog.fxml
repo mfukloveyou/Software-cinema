@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane stylesheets="@../styles/Movie/MovieListStyle.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Movie.MovieListDialogController">
+    <VBox alignment="CENTER" spacing="10" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <ListView fx:id="movieListView" prefHeight="182.0" prefWidth="410.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin></ListView>
+        <HBox prefHeight="161.0" prefWidth="416.0" spacing="10">
+            <ImageView fx:id="movieImageView" fitHeight="167.0" fitWidth="126.0">
+            <HBox.margin>
+               <Insets left="30.0" />
+            </HBox.margin></ImageView>
+            <VBox spacing="5">
+                <Text fx:id="titleText" />
+                <Text fx:id="genreText" />
+                <Text fx:id="durationText" />
+                <Text fx:id="releaseDateText" />
+            </VBox>
+        </HBox>
+        <Button onAction="#handleCloseButton" text="Close">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin></Button>
+    </VBox>
+</AnchorPane>

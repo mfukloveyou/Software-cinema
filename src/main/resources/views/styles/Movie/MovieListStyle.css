@@ -1,0 +1,59 @@
+/* Styles for the AnchorPane */
+.anchor-pane {
+    -fx-background-color: #ffffff; /* White background for the dialog */
+}
+
+/* Styles for the VBox */
+.vbox {
+    -fx-padding: 20; /* Padding around the VBox */
+    -fx-spacing: 15; /* Spacing between elements in the VBox */
+}
+
+/* Styles for ListView */
+.list-view {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #007bff; /* Blue border color */
+    -fx-border-width: 2; /* Width of the border */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-padding: 10; /* Padding inside the ListView */
+}
+.mainPane {
+    -fx-background-image: url("/images/thay.jpg"); /* Đảm bảo đường dẫn chính xác */
+    -fx-background-size: contain; /* Hoặc cover, tùy thuộc vào hiệu ứng bạn muốn */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center top; /* Vị trí hình ảnh */
+}
+
+/* Styles for HBox */
+.hbox {
+    -fx-spacing: 10; /* Spacing between elements in the HBox */
+}
+
+/* Styles for ImageView */
+.image-view {
+    -fx-border-color: #dddddd; /* Light grey border around the image */
+    -fx-border-radius: 5; /* Rounded corners */
+}
+
+/* Styles for Text */
+.text {
+    -fx-font-size: 14px; /* Font size for text */
+    -fx-text-fill: #333333; /* Dark grey text color */
+}
+
+/* Styles for the Close Button */
+.button {
+    -fx-background-color: #007bff; /* Blue background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10 20; /* Padding inside button */
+    -fx-border-radius: 5; /* Rounded corners */
+}
+
+.button:hover {
+    -fx-background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #004085; /* Even darker blue on press */
+}

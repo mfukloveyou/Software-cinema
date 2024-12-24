@@ -1,0 +1,82 @@
+/* Định dạng cho VBox */
+.vbox {
+    -fx-background-color: #ffffff; /* Màu nền trắng cho hộp thoại */
+    -fx-padding: 20; /* Padding cho toàn bộ hộp thoại */
+    -fx-spacing: 10; /* Khoảng cách giữa các phần tử */
+    -fx-border-radius: 5; /* Bo tròn góc */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 5); /* Thêm hiệu ứng đổ bóng */
+}
+
+/* Định dạng cho Label */
+.label {
+    -fx-font-size: 16px; /* Kích thước chữ */
+    -fx-text-fill: #333333; /* Màu chữ xám đậm */
+    -fx-font-weight: bold; /* Chữ đậm */
+}
+
+/* Định dạng cho ListView */
+.list-view {
+    -fx-background-color: #f9f9f9; /* Màu nền xám nhạt */
+    -fx-border-color: #2196F3; /* Màu viền xanh dương */
+    -fx-border-width: 1px; /* Độ dày viền */
+    -fx-border-radius: 5; /* Bo tròn góc */
+}
+
+/* Hiệu ứng khi di chuột qua ListView */
+.list-view:hover {
+    -fx-background-color: #e3f2fd; /* Màu nền khi di chuột qua */
+}
+
+/* Định dạng cho TextArea */
+.text-area {
+    -fx-background-color: #f0f0f0; /* Màu nền xám nhạt */
+    -fx-border-color: #2196F3; /* Màu viền xanh dương */
+    -fx-border-radius: 5;
+    -fx-padding: 5; /* Padding cho TextArea */
+    -fx-font-size: 14px; /* Kích thước chữ */
+}
+
+/* Định dạng cho ComboBox */
+.combo-box {
+    -fx-background-color: #f0f0f0; /* Màu nền xám nhạt */
+    -fx-border-color: #2196F3; /* Màu viền xanh dương */
+    -fx-border-radius: 5; /* Bo tròn góc */
+    -fx-padding: 5; /* Padding cho ComboBox */
+    -fx-font-size: 14px; /* Kích thước chữ */
+}
+
+/* Định dạng cho Button */
+.button {
+    -fx-background-color: #2196F3; /* Màu nền xanh dương */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-font-size: 14px; /* Kích thước chữ */
+    -fx-padding: 8 16 8 16; /* Padding cho Button */
+    -fx-background-radius: 5; /* Bo tròn góc */
+    -fx-cursor: hand; /* Hiển thị con trỏ chuột dưới dạng bàn tay */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 5); /* Hiệu ứng đổ bóng cho nút */
+}
+
+/* Hiệu ứng hover cho Button */
+.button:hover {
+    -fx-background-color: #1e88e5; /* Màu khi di chuột qua */
+    -fx-scale-x: 1.05; /* Phóng to nút khi di chuột qua */
+    -fx-scale-y: 1.05; /* Phóng to nút khi di chuột qua */
+}
+
+/* Hiệu ứng khi Button bị nhấn */
+.button:pressed {
+    -fx-background-color: #1976d2; /* Màu khi nút được nhấn */
+    -fx-scale-x: 0.95; /* Giảm kích thước nút khi nhấn */
+    -fx-scale-y: 0.95; /* Giảm kích thước nút khi nhấn */
+}
+
+/* Hiệu ứng cho ComboBox khi mở */
+.combo-box:hover {
+    -fx-background-color: #e3f2fd; /* Màu nền khi di chuột qua */
+}
+
+/* Hiệu ứng cho TextArea khi có focus */
+.text-area:focused {
+    -fx-border-color: #1e88e5; /* Đổi màu viền khi TextArea có focus */
+    -fx-background-color: #ffffff; /* Đổi màu nền khi TextArea có focus */
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Import ImageView -->
+
+<VBox fx:id="root" alignment="TOP_RIGHT" prefHeight="427.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.User.AdminFunctionsDialogController">
+    <stylesheets>
+        <URL value="@../styles/Admin/AdminDialogStyle.css" />
+    </stylesheets>
+
+    <children>
+        <!-- Label cho tiêu đề Admin Functions -->
+        <Label alignment="TOP_LEFT" maxWidth="1000.0" prefHeight="24.0" prefWidth="218.0" styleClass="header-label" text="Admin Functions" textFill="#ffbf1c">
+            <VBox.margin>
+                <Insets left="15.0" right="10.0" />
+            </VBox.margin>
+        </Label>
+
+        <!-- HBox cho Manage Movies -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <ImageView fx:id="logoMovies" fitHeight="63.0" fitWidth="62.0" preserveRatio="true">
+                <Image url="@../../images/logo_movies.png" /> <!-- Đường dẫn logo cho Manage Movies -->
+            </ImageView>
+            <Button fx:id="manageMoviesButton" onAction="#handleManageMovies" prefHeight="42.0" prefWidth="176.0" text="Manage Movies">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin></Button>
+        </HBox>
+
+        <!-- HBox cho Manage Showtimes -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <ImageView fx:id="logoShowtimes" fitHeight="54.0" fitWidth="64.0" preserveRatio="true">
+                <Image url="@../../images/logo_showtimes.png" /> <!-- Đường dẫn logo cho Manage Showtimes -->
+            </ImageView>
+            <Button fx:id="manageShowtimesButton" onAction="#handleManageShowtimes" prefHeight="42.0" prefWidth="166.0" text="Manage Showtimes">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin></Button>
+        </HBox>
+
+        <!-- HBox cho Manage Seats -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <ImageView fx:id="logoSeats" fitHeight="60.0" fitWidth="64.0" preserveRatio="true">
+                <Image url="@../../images/logo_seats.png" /> <!-- Đường dẫn logo cho Manage Seats -->
+            </ImageView>
+            <Button fx:id="manageSeatsButton" onAction="#handleManageSeats" prefHeight="39.0" prefWidth="167.0" text="Manage Seats">
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin></Button>
+        </HBox>
+
+        <!-- HBox cho Manage Users -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <ImageView fx:id="logoUsers" fitHeight="63" fitWidth="63" preserveRatio="true">
+                <Image url="@../../images/logo_users.png" /> <!-- Đường dẫn logo cho Manage Users -->
+            </ImageView>
+            <Button fx:id="manageUsersButton" onAction="#handleManageUsers" prefHeight="41.0" prefWidth="174.0" text="Manage Users">
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin></Button>
+        </HBox>
+
+        <!-- HBox cho Manage Tickets -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <ImageView fx:id="logoTickets" fitHeight="63" fitWidth="63" preserveRatio="true">
+                <Image url="@../../images/logo_tickets.png" /> <!-- Đường dẫn logo cho Manage Tickets -->
+            </ImageView>
+            <Button fx:id="manageTicketsButton" onAction="#handleManageTickets" prefHeight="41.0" prefWidth="176.0" text="Manage Tickets">
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin></Button>
+        </HBox>
+
+    </children>
+
+    <spacing>10</spacing>
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+</VBox>

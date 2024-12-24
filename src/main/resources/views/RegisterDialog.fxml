@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane prefHeight="321.0" prefWidth="252.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.User.UserController">
+    <stylesheets>
+        <URL value="@styles/UserRegistrationDialogStyle.css" />
+    </stylesheets>
+    <content>
+        <VBox fx:id="root" spacing="10" styleClass="vbox">
+            <TextField fx:id="usernameField" promptText="Username" styleClass="text-field" />
+            <TextField fx:id="emailField" promptText="Email" styleClass="text-field" />
+            <TextField fx:id="phoneField" promptText="Phone Number" styleClass="text-field" />
+            <PasswordField fx:id="passwordField" promptText="Password" styleClass="password-field" />
+        </VBox>
+    </content>
+    <buttonTypes>
+        <ButtonType fx:id="registerButton" text="Register" buttonData="OK_DONE"/>
+        <ButtonType fx:id="cancelButton" text="Cancel" buttonData="CANCEL_CLOSE"/>
+    </buttonTypes>
+</DialogPane>

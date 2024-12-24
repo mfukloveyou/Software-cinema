@@ -1,0 +1,74 @@
+/* styles.css */
+
+/* Toàn bộ ứng dụng */
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-base: #f0f0f0;
+    -fx-background-color: #ffffff;
+}
+
+/* Label tiêu đề */
+.label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* ListView cho danh sách suất chiếu */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #2196F3; /* Màu viền xanh dương */
+    -fx-border-width: 2px; /* Độ dày viền */
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+}
+
+/* GridPane cho danh sách ghế */
+.grid-pane {
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-border-color: #4CAF50; /* Màu viền xanh lá */
+    -fx-border-width: 2px; /* Độ dày viền */
+}
+
+/* VBox cho ghế */
+.vbox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+    -fx-border-color: #FF9800; /* Màu viền cam */
+    -fx-border-width: 2px; /* Độ dày viền */
+}
+
+/* Nút hành động */
+.button {
+    -fx-background-color: #2196F3; /* Xanh dương */
+    -fx-text-fill: white;
+    -fx-padding: 8px 15px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #1976D2; /* Màu tối hơn khi hover */
+}
+
+/* Nút xóa ghế */
+.delete-seat-button {
+    -fx-background-color: #f44336; /* Đỏ */
+}
+
+/* Nút thêm ghế */
+.add-seat-button {
+    -fx-background-color: #4CAF50; /* Xanh lá */
+}
+
+/* Nút thêm hàng loạt ghế */
+.add-multiple-seats-button {
+    -fx-background-color: #FF9800; /* Cam */
+}

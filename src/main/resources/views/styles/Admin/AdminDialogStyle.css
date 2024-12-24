@@ -1,0 +1,25 @@
+/* Định dạng cho nhãn tiêu đề */
+.header-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ebb734; /* Màu chữ xám đậm */
+}
+
+/* Định dạng cho các nút bấm */
+.button {
+    -fx-background-color: #4CAF50; /* Màu nền xanh lá cây */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20; /* Padding trên-dưới và trái-phải */
+    -fx-background-radius: 5; /* Bo tròn góc */
+}
+
+/* Hiệu ứng hover cho các nút */
+.button:hover {
+    -fx-background-color: #45a049; /* Màu khi di chuột qua */
+}
+
+/* Hiệu ứng khi nút bị nhấn */
+.button:pressed {
+    -fx-background-color: #3e8e41; /* Màu khi nút được nhấn */
+}

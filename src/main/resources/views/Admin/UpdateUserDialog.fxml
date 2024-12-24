@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@../styles/Admin/UpdateUserStyle.css" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="Controller.User.UpdateUserDialogController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Phone Number:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField fx:id="phoneField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Button onAction="#handleUpdate" text="Update" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Button alignment="CENTER" onAction="#handleCancel" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <GridPane.margin>
+            <Insets left="45.0" />
+        </GridPane.margin></Button>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane prefHeight="274.0" prefWidth="522.0" stylesheets="@../styles/Admin/ManageUsersStyle.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.User.ManageUsersController">
+    <content>
+        <VBox alignment="CENTER" prefHeight="317.0" prefWidth="321.0">
+            <Label alignment="TOP_LEFT" minWidth="300.0" styleClass="label-title" text="User List">
+                <VBox.margin>
+                    <Insets right="200.0" />
+                </VBox.margin></Label> <!-- Added label -->
+            <ListView fx:id="userListView" prefHeight="110.0" prefWidth="301.0" />
+            <HBox alignment="CENTER" spacing="10">
+                <Button onAction="#handleUpdateUser" text="Update" />
+                <Button onAction="#handleDeleteUser" text="Delete" />
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+            </HBox>
+        </VBox>
+    </content>
+</DialogPane>

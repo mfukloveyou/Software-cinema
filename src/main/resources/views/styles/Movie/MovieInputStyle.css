@@ -1,0 +1,27 @@
+/* styles.css */
+.vbox {
+    -fx-background-color: #f5f5f5; /* Màu nền cho VBox */
+    -fx-padding: 20; /* Padding cho VBox */
+}
+
+.label {
+    -fx-font-size: 14px; /* Kích thước font cho Label */
+    -fx-text-fill: #333; /* Màu chữ cho Label */
+}
+
+.text-field {
+    -fx-border-color: #ccc; /* Màu viền cho TextField */
+    -fx-border-radius: 5; /* Bo góc cho TextField */
+    -fx-padding: 5; /* Padding cho TextField */
+}
+
+.button {
+    -fx-background-color: #007bff; /* Màu nền cho Button */
+    -fx-text-fill: white; /* Màu chữ cho Button */
+    -fx-padding: 10; /* Padding cho Button */
+    -fx-border-radius: 5; /* Bo góc cho Button */
+}
+
+.button:hover {
+    -fx-background-color: #0056b3; /* Màu nền khi hover */
+}
